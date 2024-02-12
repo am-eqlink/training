@@ -1,4 +1,3 @@
 storyblok:
   token: "B2s0Ar5BRRQvjtZfEfEyrQtt"
-	# Can be either `draft` or `published`
   version: published

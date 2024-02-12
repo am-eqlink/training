@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" shrink-to-fit="no">
+  <meta name="robots" content="noindex">
+  <link rel="shortcut icon" href="https://cdn.shopify.com/s/files/1/0349/3311/2968/files/svana-icon_32x32@2x.png?v=1611073508" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.typekit.net/grv4cfq.css">
+  <link data-font-format="woff2" href="https://tdf-files.s3-accelerate.amazonaws.com/fonts/css/wulkan-display-regular.woff2.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css">
+  <link rel="stylesheet" href="../assets/css/index.css">
+  <title>To My Son, I Love You Morse Code Bracelet</title>
+
+  <script>
+    function qs(key) {
+      key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+      var match = location.search.match(new RegExp("[?&]" + key + "=([^&]+)(&|$)"));
+      return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+    }
+
+    window.pageData = {
+      variants: [{"_uid":"2aa7b2d3-d0e9-4bb7-82e3-7c2a47d650e3","name":"son-love-you-morse-bracelet-sv4","price":"26.00","img_url":{"id":4948801,"alt":null,"name":"","focus":null,"title":null,"filename":"https://a.storyblok.com/f/134268/1080x1080/c89a368c45/dsc_7234-1-1.jpg","copyright":null,"fieldtype":"asset"},"picIndex":"0","component":"variant","offer_name":"","variant_id":"39787908923478","displayName":"To My Son, I Love You Morse Code Bracelet","displayPrice":"$26.00 USD","originalPrice":"$49.90 USD","savePercentage":"Save 48%","success_redirect":"","_editable":"<!--#storyblok#{\"name\": \"variant\", \"space\": \"134268\", \"uid\": \"2aa7b2d3-d0e9-4bb7-82e3-7c2a47d650e3\", \"id\": \"139982229\"}-->"}],
+      offers: null,
+      checkoutConfig: {
+        "website":"svanadesign.com",
+        "funnel":"son-love-you-morse-bracelet-sv4",
+        "currency":"USD",
+        "enablePayPal":true,
+        "descriptor":"SVANADESIGN",
+        "shippingMethods":[{"_uid":"cb11a679-ea82-4d25-adbc-d0e40258cbe2","name":"Standard Shipping","price":"4.95","handle":"standard-shipping","selected":"true","component":"shipping_method","_editable":"<!--#storyblok#{\"name\": \"shipping_method\", \"space\": \"134268\", \"uid\": \"cb11a679-ea82-4d25-adbc-d0e40258cbe2\", \"id\": \"139982229\"}-->"}]
+      },
+      defaultVariantOptions: "son-love-you-morse-bracelet-sv4",
+      trackerConfig: {
+        "website":"svanadesign.com",
+        "funnel":"son-love-you-morse-bracelet-sv4"
+      },
+      successRedirect: "/sv4/son-love-you-morse-bracelet-sv4/30off",
+      freeShippingThreshold: 35,
+      personalization: []
+    }
+
+    window.productData = {
+      additionalPrice: {},
+      properties: {}
+    }
+
+    pageData.checkoutConfig['apexUrl'] = "https://staging-api.apcoz.com";
+    pageData.checkoutConfig['testMode'] = qs('testMode');
+
+    if (pageData.trackerConfig && window.tiktokConfig && window.tiktokConfig.pixelCode) {
+      tiktokConfig.ttclid = qs('ttclid');
+      tiktokConfig.debug = qs('tiktokDebug');
+      pageData.trackerConfig.tiktok = window.tiktokConfig;
+    }
+
+    var altVariants;
+    var altOffers;
+
+    function decodeAltParams(encodedAltParams) {
+      var altParams;
+      var str;
+
+      if (!encodedAltParams) {
+        return;
+      }
+      str = atob(encodedAltParams);
+      try {
+        altParams = JSON.parse(str)
+      } catch(err) {
+        console.error("invalid alt params", str);
+      }
+      return altParams;
+    }
+
+    function findAltParamsByName(altParams, name) {
+      return altParams.filter(function (altParam) {
+        return altParam.name === name;
+      })[0];
+    }
+
+    function updateVariantPricesWithAltPrice(altPrice, altDisplayPrice) {
+      pageData.variants.forEach(function (variant) {
+        variant.price = altPrice || variant.price;
+        variant.displayPrice = altDisplayPrice || variant.displayPrice;
+      })
+    }
+
+    function updateVariantsWithAltVariants(altVariants) {
+      pageData.variants.forEach(function (variant) {
+        var altPrice = findAltParamsByName(altVariants, variant.name);
+        if (altPrice) {
+          variant.price = altPrice.price || variant.price;
+          variant.displayPrice = altPrice.displayPrice || variant.displayPrice;
+          variant.originalPrice = altPrice.originalPrice || variant.originalPrice;
+          variant.savePercentage = 'Save ' + altPrice.savePercentage || variant.savePercentage;
+        }
+      });
+    }
+
+    function updateOffersWithAltOffers(altOffers) {
+      pageData.offers.forEach(function (offer) {
+        var altOffer = findAltParamsByName(altOffers, offer.name);
+        if (altOffer) {
+          offer.line_items.forEach(function (lineItem, index) {
+            var altLineItem = altOffer.line_items[index];
+            if (altLineItem) {
+              lineItem.price = altLineItem.price || lineItem.price;
+              lineItem.quantity = altLineItem.quantity || lineItem.quantity;
+              lineItem.display_price = altLineItem.display_price || lineItem.display_price;
+              lineItem.title = altLineItem.title || lineItem.title;
+              lineItem.variant_id = altLineItem.variant_id || lineItem.variant_id;
+            }
+          });
+        }
+      });
+    }
+
+    function updateDisplayPrice() {
+      var firstVariant = pageData.variants[0];
+      var displayPriceDom = document.getElementsByClassName('product-pricing-sale')[0];
+      var originalPriceDom = document.getElementsByClassName('product-pricing-original')[0];
+      var priceSavePctDom = document.getElementsByClassName('product-pricing-save')[0];
+
+      if (firstVariant && displayPriceDom) {
+        displayPriceDom.innerHTML = firstVariant.displayPrice;
+      }
+
+      if (firstVariant && originalPriceDom) {
+        originalPriceDom.innerHTML = firstVariant.originalPrice;
+      }
+
+      if (firstVariant && priceSavePctDom) {
+        priceSavePctDom.innerHTML = firstVariant.savePercentage;
+      }
+    }
+
+    altPrice = qs('ap') && atob(qs('ap'));
+    altDisplayPrice = qs('adp') && atob(qs('adp'));
+    altVariants = qs('av') && decodeAltParams(qs('av'));
+    altOffers = qs('ao') && decodeAltParams(qs('ao'));
+
+    if (altPrice && altDisplayPrice) {
+      updateVariantPricesWithAltPrice(altPrice, altDisplayPrice);
+    }
+
+    if (altVariants && altVariants.length > 0) {
+      updateVariantsWithAltVariants(altVariants);
+    }
+
+    if (altOffers && altOffers.length > 0) {
+      updateOffersWithAltOffers(altOffers);
+    }
+  </script>
+  
+
+  
+</head>
+<body>
+
+  {% include header.html %}
+
+  {% assign story = page.story.content %}
+
+  <section class="breadcrumbs-section d-none d-md-block">
+    <div class="container">
+      <ul class="breadcrumbs list-unstyled list-inline m-0">
+        <li class="list-inline-item m-0">
+          <a href="https://svanadesign.com/" class="text-uppercase">Svana Home<span class="angle-bracket">&nbsp;>&nbsp;</span></a>
+        </li>
+        <li class="list-inline-item m-0">
+          <span class="text-uppercase">{{ story.product_title }}</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section-block product-gallery-details">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 sticky"> 
+          <div class="product-gallery">
+            <div class="carousel-product carousel-gallery">
+
+              {% for list in story.images %}
+                {% include images.html type="product-image-gallery-large" %}
+              {% endfor %}
+                
+            </div>
+
+            <div class="carousel-product-nav d-none d-md-block">
+              {% for list in story.images %}
+                {% include images.html type="data-product-thumbnail" %}
+              {% endfor %}
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-5 offset-lg-1">
+          <div class="product-details d-flex flex-column d-md-block">
+            <span class="stock-status order-1 text-uppercase">{{ story.product_status }}</span>
+            <h1 class="product-title order-2">{{ story.product_title }}</h1>
+
+            <div class="product-review-stars order-3">
+              <ul class="list-unstyled list-inline d-inline">
+                <li class="list-inline-item">
+                  <img src="https://cdn.shopify.com/s/files/1/0349/3311/2968/files/star-icon.svg?v=1634748310" alt="">
+                </li>
+                <li class="list-inline-item">
+                  <img src="https://cdn.shopify.com/s/files/1/0349/3311/2968/files/star-icon.svg?v=1634748310" alt="">
+                </li>
+                <li class="list-inline-item">
+                  <img src="https://cdn.shopify.com/s/files/1/0349/3311/2968/files/star-icon.svg?v=1634748310" alt="">
+                </li>
+                <li class="list-inline-item">
+                  <img src="https://cdn.shopify.com/s/files/1/0349/3311/2968/files/star-icon.svg?v=1634748310" alt="">
+                </li>
+                <li class="list-inline-item">
+                  <img src="https://cdn.shopify.com/s/files/1/0349/3311/2968/files/star-icon.svg?v=1634748310" alt="">
+                </li>
+              </ul>
+              <span class="product-reviews-total">8 Reviews</span>
+            </div>
+
+            <div class="product-pricing d-flex order-4">
+              <div class="product-pricing-sale order-2 order-md-1">$26.00 USD</div>
+              <div class="product-pricing-original order-1 order-md-2">$49.90 USD</div>
+              <div class="product-pricing-save order-3 order-md-3">Save 48%</div>
+            </div>
+            
+            <div class="sticky-add-to-cart d-flex order-4">
+              <div class="container d-flex p-0">
+                <h4 class="product-title-small order-1">To My Son, I Love You Morse Code Bracelet</h4>
+                <div class="product-quantity d-flex order-6 order-md-3">
+                  <div class="product-quantity-label d-none d-md-block">QTY</div>
+                  <div class="qty-button-wrapper d-flex">
+                    <button class="btn qty-button minus">-</button>
+                    <input type="text" name="qty" class="quantity" maxlength="2" value="1">
+                    <button class="btn qty-button plus">+</button>
+                  </div>
+                </div>
+                <div class="product-info order-8 text-center text-md-left order-md-4">
+                  <p>Handcrafted / Ships from United States</p>
+                </div>
+                <button class="btn cta-button order-7 order-md-5">
+                  <span class="cta-button-text">Buy Now</span>
+                  <span class="cta-button-icon">
+                    <svg aria-hidden="true" focusable="false" role="presentation" width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+                      <g fill-rule="nonzero" fill="currentColor">
+                        <path d="M13 26C5.82 26 0 20.18 0 13S5.82 0 13 0s13 5.82 13 13-5.82 13-13 13zm0-3.852a9.148 9.148 0 1 0 0-18.296 9.148 9.148 0 0 0 0 18.296z" opacity=".29"></path><path d="M13 26c7.18 0 13-5.82 13-13a1.926 1.926 0 0 0-3.852 0A9.148 9.148 0 0 1 13 22.148 1.926 1.926 0 0 0 13 26z"></path>
+                      </g>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <div class="payment-options order-9">
+              <ul class="list-unstyled list-inline m-0">
+                <li class="list-inline-item m-0">
+                  <img src="https://cdn.shopify.com/s/files/1/0349/3311/2968/files/icons8-visa.svg?v=1608676269" alt="">
+                </li>
+                <li class="list-inline-item m-0">
+                  <img src="https://cdn.shopify.com/s/files/1/0349/3311/2968/files/icons8-mastercard.svg?v=1608676269" alt="">
+                </li>
+                <li class="list-inline-item m-0">
+                  <img src="https://cdn.shopify.com/s/files/1/0349/3311/2968/files/icons8-paypal.svg?v=1608676269" alt="">
+                </li>
+                <li class="list-inline-item m-0">
+                  <img src="https://cdn.shopify.com/s/files/1/0349/3311/2968/files/icons8-american_express.svg?v=1608676269" alt="">
+                </li>
+                <li class="list-inline-item m-0">
+                  <img src="https://cdn.shopify.com/s/files/1/0349/3311/2968/files/icons8-shopify.svg?v=1608680966" alt="">
+                </li>
+                <li class="list-inline-item m-0">
+                  <img src="https://cdn.shopify.com/s/files/1/0349/3311/2968/files/layer1.svg?v=1608681005" alt="">
+                </li>
+              </ul>
+            </div>
+            
+            <div class="product-accordion order-10">
+              <div class="accordion-wrapper">
+                  <a class="accordion active">Description</a>
+                  <div class="panel open" style="display: block;">
+                    <div class="wrapper">
+                      {% for list in story.description.content %}
+                        {% include richtext.html %}
+                      {% endfor %}
+                    </div>
+                  </div>
+                  
+                  <a class="accordion ">Product Details</a>
+                  <div class="panel " >
+                    <div class="wrapper">
+                      {% for list in story.product_details.content %}
+                        {% include richtext.html %}
+                      {% endfor %}
+                    </div>
+                  </div>
+                
+                  <a class="accordion ">Refund Policy</a>
+                  <div class="panel " >
+                    <div class="wrapper">
+                        {% for list in story.refund_policy.content %}
+                          {% include richtext.html %}
+                        {% endfor %}
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section-block instagram-and-reviews-block">
+    <div class="product-reviews">
+      <div class="container">
+        <h2 class="title">{{ story.testimonial_title }}</h2>
+        <div class="product-reviews-wrapper">
+          <div class="product-review-row row align-items-center text-left">
+
+              {% assign testimonial = story.testimonial %}
+              {% for list in testimonial %}
+                <div class="col-lg-6 col-md-12 col-sm-12 review-item  load-more">
+                  {% include testimonial.html size=testimonial.size %}
+                </div>
+              {% endfor %}
+            
+          </div>
+        </div>
+        
+        <div class="more-button text-center">
+          <div class="more-button-wrapper">
+            <button class="btn btn-default load-more-button text-uppercase" data-review-per-page="4" data-review-total="8">Read <span class="load-more-remaining">8</span> More Reviews</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  {% include footer.html %}
+  
+</body>
+</html>

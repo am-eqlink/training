@@ -1,0 +1,4 @@
+storyblok:
+  token: "1VQqmQVLPjWYdjdTEwGwxQtt"
+	# Can be either `draft` or `published`
+  version: draft

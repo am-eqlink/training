@@ -1,0 +1,52 @@
+{% if list.type == "paragraph"  %}
+    <p>
+        {% for item in list.content %}
+
+            {% if item.type == "list_item" %}
+                <ul>
+                    <li>
+                        {% for listItem in item.content[0].content %}
+                            {% if listItem.marks[0].type == "bold" %}
+                                <strong>{{listItem.text}}</strong>
+                            {% else %}
+                                {{listItem.text}}
+                            {% endif %}
+                        {% endfor %}
+                    </li>
+                </ul>
+            {% endif %}
+
+        {% if item.type == "hard_break" %}
+            <br>
+        {% endif %}
+
+        {% if item.marks[0].type == "bold" %}
+            <strong>{{item.text}}</strong>
+        {% else %}
+            {{item.text}}
+        {% endif %}
+
+        {% if item.type == "image" %}
+            <img src="{{item.attrs.src}}" alt="" srcset="">
+        {% endif %}
+
+        {% endfor %}
+    </p>
+{% else if list.type == "bullet_list"  %}
+    <ul>
+        {% for item in list.content %}
+            {% if item.type == "list_item" %}
+            <li>
+                {% for listItem in item.content[0].content %}
+                    {% if listItem.marks[0].type == "bold" %}
+                        <strong>{{listItem.text}}</strong>
+                    {% else %}
+                        {{listItem.text}}
+                    {% endif %}
+                {% endfor %}
+            </li>
+            {% endif %}
+
+        {% endfor %}
+    </ul>
+{% endif %}

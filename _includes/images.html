@@ -1,0 +1,24 @@
+{% if include.type == "data-product-thumbnail" %}
+
+    <div class="product-image-small" data-product-thumbnail="0">
+        <img src="{{ list.filename }}/m/80x80" alt="" loading="lazy" class="lazyload w-100" width="80" height="80">
+    </div>
+
+{% else if include.type == "product-image-gallery-large" %}
+
+    {% if forloop.first == true %}
+        <div class="product-image-gallery-large carousel-cell w-100" >
+            <div class="image-wrapper position-relative overflow-hidden" style="padding-top: 100.0%;">
+            <img class="img-fluid position-absolute landscape lazyautosizes lazyloaded" src="{{ list.filename }}/m/700x0" alt="" width="700" height="700">
+            </div>
+        </div>
+    {% else %}
+        <div class="product-image-gallery-large carousel-cell w-100"  style="display: none;" >
+            <div class="image-wrapper position-relative overflow-hidden " style="padding-top: 100.0%;">
+            {% include image.html url=list.filename type="gallery" %}
+            </div>
+        </div>
+        
+    {% endif %}
+
+{% endif %}

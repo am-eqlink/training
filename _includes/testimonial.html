@@ -1,0 +1,28 @@
+<div class="row review-item-inner ">
+        <!-- -->
+    <div class="col-md-6">
+        <div class="review-img">
+            <div class="image-wrapper position-relative overflow-hidden " style="padding-top: 133.38545738858483%;">
+                {% include image.html url=list.image.filename %}
+            </div>
+        </div>
+    </div>
+    <!-- -->
+    <div class="col-md-6">
+        <div class="product-review-stars">
+            <ul class="list-unstyled list-inline d-inline">
+                {% for i in (1..list.stars) %}
+                    <li class="list-inline-item">
+                        <img src="https://cdn.shopify.com/s/files/1/0349/3311/2968/files/star-icon.svg?v=1634748310" alt="">
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="review-name">{{ list.reviewer }}</div>
+        <div class="review-text">
+        <p>{{ list.review }}</p>
+        </div>
+        <div class="review-date">{{ list.date | date: "%-d/%B/%Y" }}</div>
+    </div>
+</div>
+    

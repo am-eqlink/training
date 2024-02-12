@@ -1,0 +1,15 @@
+{% if include.type == "gallery" %}
+    {% assign class = "lazyload position-absolute landscape" %}
+{% else %}
+    {% assign class = "lazyload position-absolute portrait" %}
+{% endif %}
+
+<img
+class="{{class}}"
+src="{{ include.url }}"
+srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+data-srcset="{{ include.url }}/m/180x0 180w, {{ include.url }}/m/360x0 360w, {{ include.url }}/m/540x0 540w, {{ include.url }}/m/720x0 720w, {{ include.url }}/m/900x0 900w, {{image.filename}}/m/1080x0 1080w"
+data-sizes="auto"
+width="1279"
+height="1706"alt="" 
+/>
